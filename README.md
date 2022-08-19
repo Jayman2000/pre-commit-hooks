@@ -1,6 +1,10 @@
-# Jason’s pre-commit hooks
+# MkDocs pre-commit hook
 
-This repo contains some shim [pre-commit] hooks.
+This repo contains a shim [pre-commit] hook that runs
+[`mkdocs build`](https://www.mkdocs.org/getting-started/#building-the-site).
+At the moment, this hook assumes that your
+[`mkdocs.yml`](https://www.mkdocs.org/user-guide/configuration/)
+file is in the repo’s root directory.
 
 ## Copying
 
