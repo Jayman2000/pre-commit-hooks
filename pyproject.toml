@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkdocs_pre_commit_shim"
+version = "0.0.0"
+description = "Useless package that only exists so that “pip install .” installs mkdocs."
+readme = "README.md"
+authors = [
+    { name = "Jason Yundt", email = "jason@jasonyundt.email" }
+]
+dependencies = [ "mkdocs==1.3.1" ]

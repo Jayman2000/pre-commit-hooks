@@ -46,3 +46,8 @@ repos:
         rev: v1.27.1
         hooks:
             - id: yamllint
+    -
+        repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+        rev: v2.4.0
+        hooks:
+            - id: pretty-format-toml
