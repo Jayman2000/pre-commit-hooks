@@ -1,0 +1,17 @@
+# Apparently, GitHub Workflows don’t support YAML 1.2.
+# See <https://github.com/orgs/community/discussions/30152>.
+%YAML 1.1
+---
+name: ⚠ pre-commit
+on: push
+permissions: {}
+jobs:
+    run_pre_commit_hooks:
+        name: Check repo using pre-commit
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            -
+                uses: hadenlabs/action-pre-commit@0.2.0
+                with:
+                    args: run --all
