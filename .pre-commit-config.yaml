@@ -47,7 +47,9 @@ repos:
         hooks:
             - id: yamllint
     -
+        # yamllint disable rule:line-length
         repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+        # yamllint enable
         rev: v2.4.0
         hooks:
             - id: pretty-format-toml
