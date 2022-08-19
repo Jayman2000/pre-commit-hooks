@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+-
+    id: mkdocs-build
+    name: Build MkDocs site
+    entry: mkdocs build
+    language: python
+    always_run: true
+    pass_filenames: false
+    require_serial: true
